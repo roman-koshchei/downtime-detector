@@ -37,6 +37,8 @@ var printLoop = Task.Factory.StartNew(async () =>
 
 Task.WaitAll(pingLoop, printLoop);
 
+Console.ResetColor();
+
 static async Task Ping(HttpClient client, string url, ChannelWriter<bool> channel)
 {
     try
