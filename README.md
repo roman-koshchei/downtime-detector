@@ -31,3 +31,7 @@ Run:
 ```bash
 ./src/Cli/bin/Release/net8.0/win-x64/native/Cli.exe
 ```
+
+### Other
+
+The same way you build for Windows but with different RID `-r` value.
