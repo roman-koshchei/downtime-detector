@@ -2,12 +2,12 @@
 
 if (!int.TryParse(args.FirstOrDefault(), out int period)) period = 10;
 
-var url = "https://cloud.cookingweb.dev/_/";
+var url = "https://pocketbase.cookingweb.dev/_/";
 var start = DateTime.Now;
 
 HttpClient client = new()
 {
-    Timeout = TimeSpan.FromMilliseconds(1000)
+    Timeout = TimeSpan.FromMilliseconds(1500)
 };
 
 Channel<bool> channel = Channel.CreateUnbounded<bool>();
